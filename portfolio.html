@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>    indicamos al navegaor q estamos trabajando con la ultima version de html5  -->
+
+<html lang="es">
+
+<!-- head   : van los metadatos informaocion q indiucamos al navegador para q identifique de forma correcta la pagian web -->
+
+<head>
+
+    <!-- html lang="es">    indica en q idioma esta escrinto el docuimento html -->
+
+    <!-- indicamos al navegador q tenbemos vocales con tilde -->
+    <!-- Lea codigo ASCII-->
+    <meta charset="UTF-8">
+
+    <!-- Para q el visitio web sea adaptable a cualquier dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- contniendio de la pagina web -->
+    <meta name="description" content="Esta es mi primera pagina web">
+
+    <!-- para el motor de busquedad busque mi pagina / escanear-->
+    <meta name="robots" content="index, follow">
+
+    <!-- palabras claves para encontrar mi pagina web -->
+    <meta name="keywords" content="pagina, website, sitio web, mi primera">
+
+    <!-- Nombre de nuestra página -->
+    <meta name="copyright" content="Copyright © MiWeb.com">
+
+    <!-- Indicarle al autor de quien ha creado la pagina web -->
+    <meta name="Author" Lang="es" content="Gerson N">
+
+
+
+    <!-- para q la pagina se recargue cada 10 segundos de acuerdo al contenido 
+    <meta http-equiv="refresh" content="10" />
+    -->
+
+
+    <!-- 
+    observacion : para q despues de 5 segundos se recargue otra pogina web 
+
+    <meta http-equiv="refresh" content="5; url=https://www.youtube.com/@geronelo1435" />    
+    -->
+
+
+    <!-- normalize : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+
+    <!-- estilos css : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+
+
+
+    <!-- icono en la pagina web : para importar iconos -->
+    <link rel="shortcut icon" href="./imagenes/icon.png" type="image/x-icon">
+
+    <!-- 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    -->
+
+    <!-- enlace para icnos de fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+
+
+
+
+    <!-- 
+    colocar un nombre referido a lo q contiene el documento html  y se mostrara en una pestaña -->
+    <title>Flexbox</title>
+
+</head>
+
+
+<body>
+
+    <!-- contenedor header -->
+    <header class="contenedor__header">
+
+        <!-- contenedor__superior -->
+        <nav class="contenedor__superior">
+
+            <div class="contenedor">
+
+                <!-- logo -->
+                <div class="superior__logo">
+                    <i class="fa-solid fa-chair fa-2xl" style="color: #00d09c;"></i>
+                    <h1 class="logo__titulo">ChairS</h1>
+                </div>
+
+
+                <div class="superior__menu">
+                    <ul>
+                        <li><a href="index.html">Heim</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="services.html">Dienstleistungen</a></li>
+                        <li><a href="portfolio.html" style="color: #ff6700; font-weight: 500;">Portfolio</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+
+
+    </header>
+
+
+
+
+    <main>
+
+        <!-- banner -->
+        <section class="banner">
+            <div class="banner_fila">
+                <div class="contenedor">
+                    <h5>
+                        <a href="index.html" class="ebanner">Heim</a> <span class="tbanner"> » Portfolio
+                            page</span>
+                    </h5>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- contenedor__p1 -->
+        <section class="contenedor__p1 altura1">
+            <div class="contenedor">
+
+                <div class="p1__fila">
+
+
+                    <div class="p1__tituloysubtitulo centrado">
+                        <h5>Portfolio</h5>
+                        <h3>
+                            Our Portfolio
+                        </h3>
+                    </div>
+
+
+                    <div class="p1__portafolio">
+                        <article class="article__p1imagen">
+                            <img src="./imagenes/home33.jpg" alt="" title="">
+                        </article>
+
+
+                        <article class="article__p1imagen">
+                            <img src="./imagenes/home33.jpg" alt="" title="">
+                        </article>
+
+
+                        <article class="article__p1imagen">
+                            <img src="./imagenes/home33.jpg" alt="" title="">
+                        </article>
+
+
+                        <article class="article__p1imagen">
+                            <img src="./imagenes/home31.jpg" alt="" title="">
+                        </article>
+
+
+                        <article class="article__p1imagen">
+                            <img src="./imagenes/home31.jpg" alt="" title="">
+                        </article>
+
+
+                        <article class="article__p1imagen">
+                            <img src="./imagenes/home31.jpg" alt="" title="">
+                        </article>
+
+
+                        <article class="article__p1imagen">
+                            <img src="./imagenes/home32.jpg" alt="" title="">
+                        </article>
+
+                        <article class="article__p1imagen">
+                            <img src="./imagenes/home32.jpg" alt="" title="">
+                        </article>
+
+                        <article class="article__p1imagen">
+                            <img src="./imagenes/home32.jpg" alt="" title="">
+                        </article>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- contenedor__p2 -->
+        <section class="contenedor__p2 altura1 colorFondo">
+            <div class="contenedor">
+
+                <div class="p2__fila">
+
+                    <div class="p2__tituloysubtitulo centrado">
+                        <h5>Our Portfolio</h5>
+                        <h3>
+                            Our Portfolio
+                        </h3>
+
+                        <p>
+                            Duis auctor non dolor nec lobortis praesent fringilla mi non arcu porttitor maximus nulla
+                            sem eros
+                        </p>
+                    </div>
+
+
+                    <div class="p2__portafolio">
+                        <div class="p2__lado1">
+                            <article>
+                                <img src="./imagenes/portfolio1.jpg" alt="" title="">
+                            </article>
+                        </div>
+
+                        <div class="p2__lado2">
+                            <article>
+                                <img src="./imagenes/portfolio1.jpg" class="imagen1" alt="" title="">
+                            </article>
+
+                            <article>
+                                <img src="./imagenes/portfolio3.jpg" class="imagen1" alt="" title="">
+                            </article>
+
+
+                            <article>
+                                <img src="./imagenes/portfolio4.jpg" class="imagen1" alt="" title="">
+                            </article>
+
+
+                            <article>
+                                <img src="./imagenes/portfolio5.jpg" class="imagen1" alt="" title="">
+                            </article>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- contenedor__p3 -->
+        <section class="contenedor__p3 altura1">
+            <div class="contenedor">
+
+                <div class="p3__fila">
+                    <div class="p3__tituloysubtitulo centrado">
+                        <h5>Lorem ipsum dolor</h5>
+                        <h3>
+                            Interiors that take your breath away
+                        </h3>
+                    </div>
+
+
+
+                    <div class="p3__abajo">
+
+                        <article class="article__p3proyectos">
+                            <div class="article__p4cabecera">
+                                <img src="./imagenes/home31.jpg" alt="" title="">
+
+                            </div>
+
+                            <div class="article__p4cuerpo">
+
+                                <div class="article__p4referencia">
+                                    <div class="p4__empresa">
+                                        <i class="fa-solid fa-building-shield fa-lg" style="color: #ff6700;"></i> by
+                                        <span>Consectetur</span>
+                                    </div>
+
+                                    <div class="p4__fecha">
+                                        <i class="fa-solid fa-calendar-days fa-lg" style="color: #ff6700;"></i>
+                                        23.06.1982
+                                    </div>
+                                </div>
+
+                                <div class="article__p4tituloyparrafo">
+                                    <h4>
+                                        Aenean dignissim mi congue blandit blandit risus vulputate
+                                    </h4>
+
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis aliquid illum
+                                        et neque harum adipisci commodi delectus assumenda,
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="article__p4pie">
+
+                                <div class="fila__botones1">
+
+                                    <a href="#" class="btn btn--orange">
+                                        View Our Projects
+                                    </a>
+                                </div>
+                            </div>
+
+                        </article>
+
+
+
+                        <article class="article__p3proyectos">
+                            <div class="article__p4cabecera">
+                                <img src="./imagenes/home32.jpg" alt="" title="">
+
+                            </div>
+
+                            <div class="article__p4cuerpo">
+
+                                <div class="article__p4referencia">
+                                    <div class="p4__empresa">
+                                        <i class="fa-solid fa-building-shield fa-lg" style="color: #ff6700;"></i> by
+                                        <span>Consectetur</span>
+                                    </div>
+
+                                    <div class="p4__fecha">
+                                        <i class="fa-solid fa-calendar-days fa-lg" style="color: #ff6700;"></i>
+                                        23.06.1982
+                                    </div>
+                                </div>
+
+                                <div class="article__p4tituloyparrafo">
+                                    <h4>
+                                        Aliquam faucibus sem ultrices molestie massa eleifend
+                                    </h4>
+
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                                        elit. Officiis aliquid illum
+                                        et neque harum adipisci commodi delectus assumenda,
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="article__p4pie">
+
+                                <div class="fila__botones1">
+
+                                    <a href="#" class="btn btn--orange">
+                                        View Our Projects
+                                    </a>
+                                </div>
+                            </div>
+
+                        </article>
+
+
+
+                        <article class="article__p3proyectos">
+                            <div class="article__p4cabecera">
+                                <img src="./imagenes/home33.jpg" alt="" title="">
+
+                            </div>
+
+                            <div class="article__p4cuerpo">
+
+                                <div class="article__p4referencia">
+                                    <div class="p4__empresa">
+                                        <i class="fa-solid fa-building-shield fa-lg" style="color: #ff6700;"></i> by
+                                        <span>Consectetur</span>
+                                    </div>
+
+                                    <div class="p4__fecha">
+                                        <i class="fa-solid fa-calendar-days fa-lg" style="color: #ff6700;"></i>
+                                        23.06.1982
+                                    </div>
+                                </div>
+
+                                <div class="article__p4tituloyparrafo">
+                                    <h4>
+                                        Quisque pulvinar leo sed nisi venenatis facilisis
+                                    </h4>
+
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                                        elit. Officiis aliquid illum
+                                        et neque harum adipisci commodi delectus assumenda,
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="article__p4pie">
+
+                                <div class="fila__botones1">
+
+                                    <a href="#" class="btn btn--orange">
+                                        View Our Projects
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- contenedor__a7 -->
+        <section class="contenedor__a7 altura1 colorFondo">
+            <div class="contenedor">
+
+                <div class="a7__fila">
+
+                    <div class="a7__tituloysubtitulo">
+                        <h5>Lorem ipsum dolor</h5>
+                        <h3>
+                            Join our community by using our services and grow your business
+                        </h3>
+
+                    </div>
+
+
+
+                    <div class="a7__fono">
+                        <i class="fa-brands fa-whatsapp fa-2xl" style="color: #74C0FC;"></i>
+
+                        <h4>
+                            +1(12) 366 411 4999
+                        </h4>
+
+                    </div>
+
+
+
+                    <div class="fila__botones1">
+
+                        <a href="contact.html" class="btn btn--black">
+                            Kontakt <i class="fa-solid fa-angles-right fa-xs"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- contenedor__footer -->
+        <section class="contenedor__footer">
+            <div class="contenedor">
+                <div class="footer__fila">
+
+                    <div class="footer__section1">
+                        <h4 style="color: #00d09c;">Chairs</h4>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, non!
+                        </p>
+
+                        <div class="redsocial1">
+                            <a href="#"><img src="./imagenes/facebook1.svg" alt="facebook1" title="facebook1"></a>
+
+                            <a href="#"><img src="./imagenes/twitter1.svg" alt="twitter1" title="twitter1"></a>
+
+                            <a href="#"><img src="./imagenes/instagram1.svg" alt="instagram1" title="instagram1"></a>
+
+                            <a href="#"><img src="./imagenes/linkedin1.svg" alt="linkedin1" title="linkedin1"></a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="footer__section1">
+                        <h4>Link</h4>
+
+                        <ul class="menu__opciones">
+                            <li><a href="index.html"><span>»</span> Heim</a></li>
+                            <li><a href="about.html"><span>»</span> über Uns</a></li>
+                            <li><a href="services.html"><span>»</span> Dienstleistungen</a></li>
+                            <li><a href="portfolio.html"><span>»</span> Portfolio</a></li>
+                            <li><a href="contact.html"><span>»</span> Kontakt</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer__section1">
+                        <h4>Dienstleistungen</h4>
+
+                        <ul class="menu__opciones">
+                            <li><a href="services.html"><span>»</span> Dienstleistungen 1</a></li>
+                            <li><a href="services.html"><span>»</span> Dienstleistungen 2</a></li>
+                            <li><a href="services.html"><span>»</span> Dienstleistungen 3</a></li>
+                            <li><a href="services.html"><span>»</span> Dienstleistungen 4</a></li>
+                            <li><a href="services.html"><span>»</span> Dienstleistungen 5</a></li>
+                            <li><a href="services.html"><span>»</span> Dienstleistungen 6</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer__section1">
+                        <h4>Kontakt</h4>
+
+                        <ul class="menu__opciones">
+                            <li><a
+                                    href="https://api.whatsapp.com/send?phone=974731614&amp;text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20de%20los%20servicios">
+                                    <span>»</span> +51 974 731 614
+                                </a></li>
+                            <li><a href="mailto:gnerylozada@gmail.com"><span>»</span> gnerylozada@gmail.com</a>
+                            </li>
+                            <li><a href="services.html"><span>»</span> Grünstraße 15, 40212 Düsseldorf,
+                                    Germany</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- pie -->
+    <footer class="contenedor__footerautor">
+        <div class="contenedor">
+
+            <div class="pie__titulo">
+                <p>
+                    &copy; 2024, Derechos Reservados, Diseñado por
+                    <span class="autor">93R50N</span>
+
+                    <br>
+                    Jeder Beitrag, egal wie klein, kann jemandes Leben verändern. Spende:
+                    <span class="donacion">
+                        <a href="https://wa.link/5nawh3"> Plin o Yape</a>
+                    </span>
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>

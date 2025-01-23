@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>    indicamos al navegaor q estamos trabajando con la ultima version de html5  -->
+
+<html lang="es">
+
+<!-- head   : van los metadatos informaocion q indiucamos al navegador para q identifique de forma correcta la pagian web -->
+
+<head>
+
+    <!-- html lang="es">    indica en q idioma esta escrinto el docuimento html -->
+
+    <!-- indicamos al navegador q tenbemos vocales con tilde -->
+    <!-- Lea codigo ASCII-->
+    <meta charset="UTF-8">
+
+    <!-- Para q el visitio web sea adaptable a cualquier dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- contniendio de la pagina web -->
+    <meta name="description" content="Esta es mi primera pagina web">
+
+    <!-- para el motor de busquedad busque mi pagina / escanear-->
+    <meta name="robots" content="index, follow">
+
+    <!-- palabras claves para encontrar mi pagina web -->
+    <meta name="keywords" content="pagina, website, sitio web, mi primera">
+
+    <!-- Nombre de nuestra página -->
+    <meta name="copyright" content="Copyright © MiWeb.com">
+
+    <!-- Indicarle al autor de quien ha creado la pagina web -->
+    <meta name="Author" Lang="es" content="Gerson N">
+
+
+
+    <!-- para q la pagina se recargue cada 10 segundos de acuerdo al contenido 
+    <meta http-equiv="refresh" content="10" />
+    -->
+
+
+    <!-- 
+    observacion : para q despues de 5 segundos se recargue otra pogina web 
+
+    <meta http-equiv="refresh" content="5; url=https://www.youtube.com/@geronelo1435" />    
+    -->
+
+
+    <!-- normalize : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+
+    <!-- estilos css : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+
+
+
+    <!-- icono en la pagina web : para importar iconos -->
+    <link rel="shortcut icon" href="./imagenes/icon.png" type="image/x-icon">
+
+    <!-- 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    -->
+
+    <!-- enlace para icnos de fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+
+
+
+
+    <!-- 
+    colocar un nombre referido a lo q contiene el documento html  y se mostrara en una pestaña -->
+    <title>Flexbox</title>
+
+</head>
+
+
+<body>
+
+    <!-- contenedor header -->
+    <header class="contenedor__header" id="inicio">
+
+        <!-- contenedor__superior -->
+        <nav class="contenedor__superior">
+
+            <div class="contenedor">
+
+                <!-- logo -->
+                <div class="superior__logo">
+                    <i class="fa-solid fa-chair fa-2xl" style="color: #00d09c;"></i>
+                    <h1 class="logo__titulo">ChairS</h1>
+                </div>
+
+
+                <div class="superior__menu">
+                    <ul>
+                        <li><a href="index.html" style="color: #00d09c; font-weight: 500;">Heim</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="services.html">Dienstleistungen</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+
+
+        <!-- contenedor__banner -->
+        <section class="contenedor__banner altura2">
+            <div class="contenedor">
+
+                <div class="banner__fila">
+                    <h5 class="colorh5">
+                        Aenean eu nulla mauris
+                    </h5>
+                    <h2>
+                        <span>Etiam enim purus sit semper</span> euismod vitae quam
+                    </h2>
+
+                    <p class="banner__texto p320px">
+                        Nunc mi odio, tempor eget dignissim id, aliquet eu felis. Donec magna diam, posuere eget
+                        molestie
+                        non, rutrum sit amet turpis. Ut eget diam non nibh.
+                    </p>
+
+
+                    <div class="fila__botones2">
+
+                        <a href="services.html" class="btn a320px">
+                            View Our Projects
+                            <i class="fa-solid fa-circle-arrow-right fa-xl" style="color: #ff6700;"></i>
+                        </a>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+    </header>
+
+
+
+
+    <main>
+        <!-- contenedor__homes1 -->
+        <section class="contenedor__h1 altura1 colorFondo altura2">
+            <div class="contenedor">
+
+                <div class="h1__fila">
+
+                    <div class="h1__lado1">
+
+                        <div class="h1lado1__grupo">
+                            <h5>
+                                Curabitur posuere
+                            </h5>
+                            <h3 class="h3320px">
+                                Donec non convallis odio nibh porttitor
+                            </h3>
+                            <p class="p320px">
+                                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper
+                                at tempufddfel.Lorem ipsum dolor sit, amet consectetur elit. Earum mollitia cum ex ipsam
+                                autem!earum sequi amet.
+                            </p>
+
+
+                            <div class="fila__botones1">
+                                <a href="about.html" class="btn btn--black">
+                                    Read More <i class="fa-solid fa-angles-right fa-xs"></i>
+                                </a>
+
+                                <a href="contact.html" class="btn btn--light">
+                                    Contact Us <i class="fa-solid fa-angles-right fa-xs"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="h1__lado2">
+                        <div class="h1lado2__grupos">
+                            <div class="h1lado2__grupo1">
+                                <img src="./imagenes/home1.jpg" alt="home1" title="home1">
+                            </div>
+
+                            <div class="h1lado2__grupo2">
+                                <img src="./imagenes/home2.jpg" alt="home2" title="home2">
+
+                                <img src="./imagenes/home3.jpg" alt="home3" title="home3">
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- contenedor__h2 -->
+        <section class="contenedor__h2 altura1 altura2">
+            <div class="contenedor">
+                <div class="h2__fila">
+                    <div class="h2__tituloysubtitulo centrado">
+                        <h5>Lorem ipsum dolor</h5>
+                        <h3 class="h3320px">
+                            Interiors that take your breath away
+                        </h3>
+                        <p class="p320px">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sapiente commodi maiores
+                            ullam est nostrum aliquam!
+                        </p>
+
+                    </div>
+
+
+                    <div class="h2__clasifica">
+
+                        <article class="article__design">
+                            <div class="article__imagen">
+                                <i class="fa-solid fa-house-chimney fa-2xl" style="color: #006ad2;"></i>
+                            </div>
+
+                            <div class="article__texto">
+                                <h4 class="h4320px">
+                                    Residential Design
+                                </h4>
+                                <p class="sp320px">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sint consectetur quasi
+                                    mollitia.
+                                </p>
+                            </div>
+
+                        </article>
+
+
+                        <article class="article__design">
+                            <div class="article__imagen">
+                                <i class="fa-solid fa-building fa-2xl" style="color: #006ad2;"></i>
+                            </div>
+
+                            <div class="article__texto">
+                                <h4 class="h4320px">
+                                    Residential Design
+                                </h4>
+                                <p class="sp320px">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                                    sint consectetur quasi
+                                    mollitia.
+                                </p>
+                            </div>
+
+                        </article>
+
+
+
+                        <article class="article__design">
+                            <div class="article__imagen">
+                                <i class="fa-solid fa-briefcase fa-2xl" style="color: #006ad2;"></i>
+                            </div>
+
+                            <div class="article__texto">
+                                <h4 class="h4320px">
+                                    Residential Design
+                                </h4>
+                                <p class="sp320px">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                                    sint consectetur quasi
+                                    mollitia.
+                                </p>
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- contenedor__h3 -->
+        <section class="contenedor__h3 altura1 colorFondo altura2">
+            <div class="contenedor">
+
+                <div class="h3__fila">
+
+                    <div class="h3__tituloysubtitulo centrado">
+                        <h5>
+                            Our Gallery
+                        </h5>
+                        <h3 class="h3320px">
+                            Latest Projects
+                        </h3>
+                    </div>
+
+
+                    <div class="h3__portafolio">
+                        <img src="./imagenes/home31.jpg" alt="home31" title="home31">
+                        <img src="./imagenes/home32.jpg" alt="home32" title="home32">
+                        <img src="./imagenes/home33.jpg" alt="home33" title="home33">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- contenedor__h4 -->
+        <section class="contenedor__h4 altura1 altura2">
+            <div class="contenedor">
+
+                <div class="h4__fila">
+
+                    <div class="h4__lado1">
+                        <div class="h4__tituloysubtitulo">
+                            <h5>
+                                Uniqueue Designs
+                            </h5>
+                            <h3 class="h3320px">
+                                Creating Your Future With Affection
+                            </h3>
+
+                            <p class="p320px">
+                                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper
+                                at tempufddfel.Lorem ipsum dolor
+                                sit, amet consectetur elit. Earum mollitia cum ex ipsam autem!earum sequi amet.
+                            </p>
+                        </div>
+
+
+                        <div class="h4__dosestadisticas">
+
+                            <article class="article__h4">
+                                <div class="articleh4__imagen">
+                                    <i class="fa-solid fa-chart-pie fa-2xl" style="color: #006ad2;"></i>
+
+                                </div>
+
+                                <div class="articleh4__texto">
+                                    <h4 class="h4320px">
+                                        2022
+                                    </h4>
+                                    <p class="sp320px">
+                                        Successful Projects
+                                    </p>
+                                </div>
+
+                            </article>
+
+
+                            <article class="article__h4">
+                                <div class="articleh4__imagen">
+                                    <i class="fa-solid fa-users fa-2xl" style="color: #006ad2;"></i>
+
+                                </div>
+
+                                <div class="articleh4__texto">
+                                    <h4 class="h4320px">
+                                        1060
+                                    </h4>
+                                    <p class="sp320px">
+                                        Happy Clients
+                                    </p>
+                                </div>
+
+                            </article>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="h4__lado2">
+
+                        <article class="articleh4__lado2imagen">
+                            <img src="./imagenes/home41.jpg" alt="home41" title="home41">
+                            <img src="./imagenes/home42.jpg" alt="home42" title="home42">
+                        </article>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- contenedor__h5 -->
+        <section class="contenedor__h5 altura1 colorFondo altura2">
+            <div class="contenedor">
+                <div class="h5__fila">
+
+                    <div class="h5__lado1">
+
+                        <div class="h5__tituloysubtitulo">
+                            <h5>
+                                Our Services
+                            </h5>
+                            <h3 class="h3320px">
+                                Our work process make your dream true
+                            </h3>
+
+                            <p class="p320px">
+                                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper
+                                at tempufddfel.Lorem ipsum dolor
+                                sit, amet consectetur elit. Earum mollitia cum ex ipsam autem!earum sequi amet.
+                            </p>
+                        </div>
+
+                        <div class="h5__itemservices">
+
+                            <div class="h5__item">
+                                <i class="fa-solid fa-circle-check fa-lg" style="color: #337ab7;"></i> <span>Euismod
+                                    tincidunt
+                                    ut</span>
+                            </div>
+
+
+                            <div class="h5__item">
+                                <i class="fa-solid fa-circle-check fa-lg" style="color: #337ab7;"></i> <span>Euismod
+                                    tincidunt
+                                    ut</span>
+                            </div>
+
+
+                            <div class="h5__item">
+                                <i class="fa-solid fa-circle-check fa-lg" style="color: #337ab7;"></i> <span>Euismod
+                                    tincidunt
+                                    ut</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="fila__botones1">
+                            <a href="services.html" class="btn btn--black">
+                                Services Info <i class="fa-solid fa-angles-right fa-xs"></i>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="h5__lado2">
+
+                        <article class="article__imagen">
+                            <img src="./imagenes/home51.jpg" alt="home51" title="home51">
+                        </article>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- contenedor__h6 -->
+        <section class="contenedor__h6 altura1 altura2">
+            <div class="contenedor">
+                <div class="h6__fila">
+
+                    <div class="h6__tituloysubtitulo centrado">
+                        <h5>Testimonial</h5>
+                        <h3 class="h3320px">
+                            See What Are The Clients Saying About us
+                        </h3>
+                    </div>
+
+
+                    <div class="h6__lado1">
+
+                        <article class="article__h6">
+                            <div class="articleh6__parrafo">
+                                <p class="p320px">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur corrupti
+                                    doloremque commodi, nostrum dolore asperiores dolor molestias, delectus unde rem
+                                    ducimus aspernatur molestiae voluptatem quis architecto officiis harum inventore
+                                    distinctio.
+                                </p>
+
+                            </div>
+
+                            <div class="articleh6__imagenytexto">
+                                <div class="articleh6__imagen">
+                                    <img src="./imagenes/t1.jpg" alt="t1" title="t1">
+                                </div>
+
+                                <div class="articleh6__texto">
+                                    <h4 class="h4320px">Lia Brandenberger</h4>
+                                    <p>
+                                        Curabitur posuere
+                                    </p>
+                                </div>
+                            </div>
+
+                        </article>
+
+
+                        <article class="article__h6">
+                            <div class="articleh6__parrafo">
+                                <p class="p320px">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur corrupti
+                                    doloremque commodi, nostrum dolore asperiores dolor molestias, delectus unde rem
+                                    ducimus aspernatur molestiae voluptatem quis architecto officiis harum inventore
+                                    distinctio.
+                                </p>
+
+                            </div>
+
+                            <div class="articleh6__imagenytexto">
+                                <div class="articleh6__imagen">
+                                    <img src="./imagenes/t2.jpg" alt="t2" title="t2">
+                                </div>
+
+                                <div class="articleh6__texto">
+                                    <h4 class="h4320px">Vollrath Von Hellermann</h4>
+                                    <p>
+                                        Curabitur posuere
+                                    </p>
+                                </div>
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+                </div>
+        </section>
+
+
+        <!-- contenedor__h7 -->
+        <section class="contenedor__h7 altura1 colorFondo altura2">
+            <div class="contenedor">
+                <div class="h7__fila">
+
+                    <div class="h7__tituloysubtitulo centrado">
+                        <h3 class="h3320px">
+                            Supplies & Partners
+                        </h3>
+                    </div>
+
+                    <div class="h7__partner">
+                        <img src="./imagenes/partner1.jpg" alt="partner1" title="">
+                        <img src="./imagenes/partner2.jpg" alt="partner2" title="">
+                        <img src="./imagenes/partner3.jpg" alt="partner3" title="">
+                        <img src="./imagenes/partner4.jpg" alt="partner4" title="">
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- contenedor__footer -->
+        <section class="contenedor__footer altura2">
+            <div class="contenedor">
+                <div class="footer__fila">
+
+                    <div class="footer__section1">
+                        <h4 style="color: #00d09c;">Chairs</h4>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, non!
+                        </p>
+
+                        <div class="redsocial1">
+                            <a href="#"><img src="./imagenes/facebook1.svg" alt="facebook1" title="facebook1"></a>
+
+                            <a href="#"><img src="./imagenes/twitter1.svg" alt="twitter1" title="twitter1"></a>
+
+                            <a href="#"><img src="./imagenes/instagram1.svg" alt="instagram1" title="instagram1"></a>
+
+                            <a href="#"><img src="./imagenes/linkedin1.svg" alt="linkedin1" title="linkedin1"></a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="footer__section1">
+                        <h4>Link</h4>
+
+                        <ul class="menu__opciones">
+                            <li><a href="index.html"><span>»</span> Heim</a></li>
+                            <li><a href="about.html"><span>»</span> über Uns</a></li>
+                            <li><a href="services.html"><span>»</span> Dienstleistungen</a></li>
+                            <li><a href="portfolio.html"><span>»</span> Portfolio</a></li>
+                            <li><a href="contact.html"><span>»</span> Kontakt</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer__section1">
+                        <h4>Dienstleistungen</h4>
+
+                        <ul class="menu__opciones">
+                            <li><a href="services.html"><span>»</span> Dienstleistungen 1</a></li>
+                            <li><a href="services.html"><span>»</span> Dienstleistungen 2</a></li>
+                            <li><a href="services.html"><span>»</span> Dienstleistungen 3</a></li>
+                            <li><a href="services.html"><span>»</span> Dienstleistungen 4</a></li>
+                            <li><a href="services.html"><span>»</span> Dienstleistungen 5</a></li>
+                            <li><a href="services.html"><span>»</span> Dienstleistungen 6</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer__section1">
+                        <h4>Kontakt</h4>
+
+                        <ul class="menu__opciones">
+                            <li><a
+                                    href="https://api.whatsapp.com/send?phone=974731614&amp;text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20de%20los%20servicios">
+                                    <span>»</span> +51 974 731 614
+                                </a></li>
+                            <li><a href="mailto:gnerylozada@gmail.com"><span>»</span> gnerylozada@gmail.com</a>
+                            </li>
+                            <li><a href="services.html"><span>»</span> Grünstraße 15, 40212 Düsseldorf,
+                                    Germany</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+    <!-- pie -->
+    <footer class="contenedor__footerautor">
+        <div class="contenedor">
+
+            <div class="pie__titulo">
+                <p>
+                    &copy; 2024, Derechos Reservados, Diseñado por
+                    <span class="autor">93R50N</span>
+
+                    <br>
+                    Jeder Beitrag, egal wie klein, kann jemandes Leben verändern. Spende:
+                    <span class="donacion">
+                        <a href="https://wa.link/5nawh3"> Plin o Yape</a>
+                    </span>
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
